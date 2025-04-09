@@ -3,6 +3,11 @@ module verifica_paridade (
   output erro
 );
 
-// implemente o seu código aqui
+wire paridade_calculada = ^dado[7:0];
+
+assign erro = (paridade_calculada != dado[8]);
+
 
 endmodule
+
+
