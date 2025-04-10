@@ -3,6 +3,7 @@ module calcula_paridade (
   output paridade
 );
 
-// implemente o seu código aqui
+assign paridade = ^dado; // ^ = XOR não esqueça wallace
 
 endmodule
+
